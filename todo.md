@@ -8,7 +8,7 @@
 - [ ] Change status of any unit from the GUI
 - [ ] Mobile app
 - [ ] Host the website somewhere (github hosting)
-- [ ] Landing page about myself and my projects
+- [ ] Landing page about myself and my projects + portfolio
 - [ ] CI-CD chain with testing before deploying to the host
 
 ## Docker
