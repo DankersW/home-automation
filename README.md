@@ -1,7 +1,7 @@
 # Home-automation
 My Home-automation project consists of several different components each with their own repo and responsibility. 
 
-** Run **
+**Run**
 ```sh
 docker-compose -f docker-compose_prod-arm.yml up -d
 ```
