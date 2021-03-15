@@ -54,5 +54,15 @@ services:
       - mongo
       - mqtt_mosquitto_broker
 
+  io-backend:
+    image: dankersw/dankers-io-backend:v1.0.0
+    hostname: io-backend
+    container_name: io-backend
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+
 volumes:
   mongo-volume:
