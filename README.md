@@ -1,6 +1,11 @@
 # Home-automation
 My Home-automation project consists of several different components each with their own repo and responsibility. 
 
+** Run **
+```sh
+docker-compose -f docker-compose_prod-arm.yml up -d
+```
+
 ![Architecture](static/architecture/Home-automation.png "Architectural overview")
 
 ## Home-automation-framework
