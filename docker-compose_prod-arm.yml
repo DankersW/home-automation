@@ -54,10 +54,10 @@ services:
       - mongo
       - mqtt_mosquitto_broker
 
-  io-backend:
-    image: dankersw/dankers-io-backend:v1.0.0
-    hostname: io-backend
-    container_name: io-backend
+  backend:
+    image: dankersw/home-automation-backend:v1.1.0
+    hostname: backend
+    container_name: backend
     restart: always
     ports:
       - "3000:3000"
