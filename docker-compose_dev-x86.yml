@@ -55,12 +55,12 @@ services:
       - mqtt_mosquitto_broker
 
   backend:
-    image: dankersw/home-automation-backend:v1.1.0
+    image: dankersw/home-automation-backend:v1.2.0
     hostname: backend
     container_name: backend
     restart: always
     ports:
-      - "3000:3000"
+      - "4000:4000"
     depends_on:
       - mongo
 
