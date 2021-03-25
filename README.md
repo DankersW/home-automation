@@ -1,25 +1,34 @@
 # Home-automation
-My Home-automation project consists of several different components each with their own repo and responsibility. 
+
+My Home-automation project consists of several different components each with their own repo and responsibility.
 
 **Run**
+
 ```sh
 docker-compose -f docker-compose_prod-arm.yml up -d
 ```
 
+|                                      | Status             | Start date | completion data |
+|--------------------------------------|--------------------|------------|-----------------|
+| Stage 1: Poc - Apartment temperature | Done :check_mark:  | 05-03-2021 | 25-03-2021      |
+| Stage 2: Cleanup PoC                 | In-progress :gear: |            |                 |
+| Stage 3: Plant health monitoring     | defined :dart:     |            |                 |
+
+&nbsp;
+
 ![Architecture](static/architecture/Home-automation.png "Architectural overview")
 
 ## Home-automation-framework
-Follows the Observer pattern and is primarily used as link between the smart-home-appliances, the cloud, and the 
-visualization. 
+Follows the Observer pattern and is primarily used as link between the smart-home-appliances, the cloud, and the visualization.
 
 **Writen in:** Python
 ![Architecture](static/architecture/Home-automation-framework.png "Architectural overview")
 
 [Github repo](https://github.com/DankersW/home-automation-framework)
 
-
 ## IoT-monitoring
-Front-end to visualize device status, host health monitoring, and iot-message tracing. 
+
+Front-end to visualize device status, host health monitoring, and iot-message tracing.
 
 Using Angular as a front-end framework.
 
