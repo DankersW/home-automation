@@ -8,7 +8,7 @@ My Home-automation project consists of several different components each with th
 docker-compose -f docker-compose_prod-arm.yml up -d
 ```
 
-|                                      | Status             | Start date | Completion data |
+|                                      | Status             | Start date | Completion date |
 |--------------------------------------|--------------------|------------|-----------------|
 | Stage 1: Poc - Apartment temperature | Done :beers:       | 05-03-2021 | 25-03-2021      |
 | Stage 2: Cleanup PoC                 | In-progress :gear: |            |                 |
