@@ -65,14 +65,14 @@ services:
       - mongo
   
   frontend:
-    image: dankersw/home-automation-frontend:v1.0.1
+    image: dankersw/home-automation-frontend:v1.1.0
     hostname: frontend
     container_name: frontend
     restart: always
     ports:
-      - "3000:3000"
+      - "80:80"
     depends_on:
-      - backend  
+      - backend 
 
 volumes:
   mongo-volume:
