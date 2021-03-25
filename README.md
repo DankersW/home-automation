@@ -10,7 +10,7 @@ docker-compose -f docker-compose_prod-arm.yml up -d
 
 |                                      | Status             | Start date | completion data |
 |--------------------------------------|--------------------|------------|-----------------|
-| Stage 1: Poc - Apartment temperature | Done :check_mark:  | 05-03-2021 | 25-03-2021      |
+| Stage 1: Poc - Apartment temperature | Done :beers:  | 05-03-2021 | 25-03-2021      |
 | Stage 2: Cleanup PoC                 | In-progress :gear: |            |                 |
 | Stage 3: Plant health monitoring     | defined :dart:     |            |                 |
 
