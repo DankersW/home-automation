@@ -1,6 +1,6 @@
 # Roadmap
 
-## Stage 1: POC - Appartment temperature :check_mark:
+## Stage 1: POC - Appartment temperature :heavy_check_mark:
 
 One IoT device periodically updating the rooms temperature to the framework via mqtt. The Framework publishes this info to the mongo db. A react front end will show a temperature graph over time. the front end will connect to the db via a Go back-end in a restfull fashion.
 
