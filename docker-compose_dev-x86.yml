@@ -29,7 +29,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: "admin"
       MONGO_INITDB_ROOT_PASSWORD: "mongo_admin_iot"
     volumes:
-      - ./docker/MongoDb/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./docker/MongoDb/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
       - ./mongo-volume:/data/db
 
   mongo-express:
