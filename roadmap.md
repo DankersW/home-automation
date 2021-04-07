@@ -14,7 +14,7 @@ One IoT device periodically updating the rooms temperature to the framework via 
 Clean-up of the big PoC.
 
 - Docker info reagding uptime, docker image, version, etc. in frontent via Docker API Engine.
-- Temperature API returns only data from the last 7 days.
+- Temperature API returns only data from the last 7 days. :heavy_check_mark:
 - Iot devices reconnects wifi and mqtt broker if the connection is lost.
 - Update documentation.
 - Frontent UI optimimized for smaller devices.
@@ -36,3 +36,5 @@ Prefered is also to analyze the soil acidity.
 - *Threat + Zigbee*: Look into a Zigbee board and implement and Threat gateway.
 
 - *Map devices*: Map devices names to their physical location in the appartment.
+
+- *Schedular*: Scene schedular, Turn on certain lamps to a cosy color between the times of X-Y if one of the owners is home, based on the which mobile phone is in the appartment. 
