@@ -18,7 +18,7 @@ Clean-up of the big PoC.
 - Iot devices reconnects wifi and mqtt broker if the connection is lost.
 - Update documentation.
 - Frontent UI optimimized for smaller devices.
-- Frontend UI landing page with links.
+- Frontend UI landing page with links. :heavy_check_mark:
 - Framework periodically sends out an MQTT message requesting the state of the connected devices. State includes uptime, connected, last message, etc.
 - Visualize the device state in a table in the frontend UIs
 
