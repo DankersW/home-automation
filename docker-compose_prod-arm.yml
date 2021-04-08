@@ -65,7 +65,7 @@ services:
       - mongo
   
   frontend:
-    image: dankersw/home-automation-frontend:v1.1.0
+    image: dankersw/home-automation-frontend:v1.1.2
     hostname: frontend
     container_name: frontend
     restart: always
