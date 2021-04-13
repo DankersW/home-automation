@@ -21,6 +21,7 @@ Clean-up of the big PoC.
 - Frontend UI landing page with links. :heavy_check_mark:
 - Framework periodically sends out an MQTT message requesting the state of the connected devices. State includes uptime, connected, last message, etc.
 - Visualize the device state in a table in the frontend UIs
+- Show the number of connected devices in the UI
 
 ## Stage 3: Plant health :dart:
 
