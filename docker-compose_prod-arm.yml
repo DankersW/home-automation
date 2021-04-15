@@ -33,7 +33,7 @@ services:
       - ./mongo-volume:/data/db
 
   mongo-express:
-    image: mongo-express
+    image: mongo-express:0.54.0
     hostname: mongo-express
     container_name: mongo-express
     restart: always
@@ -55,7 +55,7 @@ services:
       - mqtt_mosquitto_broker
 
   backend:
-    image: dankersw/home-automation-backend:v1.2.2
+    image: dankersw/home-automation-backend:v1.2.3
     hostname: backend
     container_name: backend
     restart: always
@@ -63,9 +63,11 @@ services:
       - "4000:4000"
     depends_on:
       - mongo
+    volumes: 
+      - /var/run/docker.sock:/var/run/docker.sock
   
   frontend:
-    image: dankersw/home-automation-frontend:v1.1.2
+    image: dankersw/home-automation-frontend:v1.1.4
     hostname: frontend
     container_name: frontend
     restart: always
