@@ -13,7 +13,7 @@ One IoT device periodically updating the rooms temperature to the framework via 
 
 Clean-up of the big PoC.
 
-- Docker info reagding uptime, docker image, version, etc. in frontent via Docker API Engine.
+- Docker info reagding uptime, docker image, version, etc. in frontent via Docker API Engine. :heavy_check_mark:
 - Temperature API returns only data from the last 7 days. :heavy_check_mark:
 - Iot devices reconnects wifi and mqtt broker if the connection is lost.
 - Update documentation.
