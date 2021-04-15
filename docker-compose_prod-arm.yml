@@ -63,6 +63,8 @@ services:
       - "4000:4000"
     depends_on:
       - mongo
+    volumes: 
+      - /var/run/docker.sock:/var/run/docker.sock
   
   frontend:
     image: dankersw/home-automation-frontend:v1.1.2
