@@ -33,7 +33,7 @@ services:
       - ./mongo-volume:/data/db
 
   mongo-express:
-    image: mongo-express
+    image: mongo-express:0.54.0
     hostname: mongo-express
     container_name: mongo-express
     restart: always
