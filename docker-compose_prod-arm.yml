@@ -67,7 +67,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
   
   frontend:
-    image: dankersw/home-automation-frontend:v1.1.2
+    image: dankersw/home-automation-frontend:v1.1.4
     hostname: frontend
     container_name: frontend
     restart: always
