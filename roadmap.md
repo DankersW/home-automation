@@ -15,7 +15,7 @@ Clean-up of the big PoC.
 
 - Docker info reagding uptime, docker image, version, etc. in frontent via Docker API Engine. :heavy_check_mark:
 - Temperature API returns only data from the last 7 days. :heavy_check_mark:
-- Iot devices reconnects wifi and mqtt broker if the connection is lost.
+- Iot devices reconnects wifi and mqtt broker if the connection is lost. :heavy_check_mark:
 - Update documentation.
 - Frontent UI optimimized for smaller devices.
 - Frontend UI landing page with links. :heavy_check_mark:
