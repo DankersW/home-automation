@@ -22,6 +22,7 @@ Clean-up of the big PoC.
 - Framework periodically sends out an MQTT message requesting the state of the connected devices. State includes uptime, connected, last message, etc.
 - Visualize the device state in a table in the frontend UIs
 - Show the number of connected devices in the UI
+- Host db on SSD instead of on the device itself for the prod file
 
 ## Stage 3: Plant health :dart:
 
