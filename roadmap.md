@@ -23,6 +23,7 @@ Clean-up of the big PoC.
 - Visualize the device state in a table in the frontend UIs
 - Show the number of connected devices in the UI
 - Host db on SSD instead of on the device itself for the prod file
+- Show current temperature and humidity in on off the monitoring cards
 
 ## Stage 3: Plant health :dart:
 
