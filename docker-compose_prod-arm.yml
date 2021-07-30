@@ -30,7 +30,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: "mongo_admin_iot"
     volumes:
       - ./docker/MongoDb/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
-      - ./mongo-volume:/data/db
+      - /media/dankers-iot/iot-drive/mongo-volume:/data/db
 
   mongo-express:
     image: mongo-express:0.54.0
