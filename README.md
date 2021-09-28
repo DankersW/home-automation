@@ -2,7 +2,7 @@
 
 My Home-automation project consists of several different components each with their own repo and responsibility.
 
-**Run**
+## Run
 
 ```sh
 docker-compose -f docker-compose_prod-arm.yml up -d
@@ -19,6 +19,7 @@ docker-compose -f docker-compose_prod-arm.yml up -d
 ![Architecture](static/architecture/Home-automation.png "Architectural overview")
 
 ## Home-automation-framework
+
 Follows the Observer pattern and is primarily used as link between the smart-home-appliances, the cloud, and the visualization.
 
 **Writen in:** Python
@@ -34,8 +35,8 @@ Using Angular as a front-end framework.
 
 **Writen in:** Typescript
 
-
 ## Connected-home-cloud
+
 Cloud part of the project. GCP is selected as the cloud provider. The main purpose of the cloud part is as an bridge my
 Sonos eco-system and my IoT units. GCP enables me to talk to units using voice commands via Google Assistant which is
 enabled on my Sonos network speakers.  
@@ -47,6 +48,6 @@ enabled on my Sonos network speakers.
 
 ## Smart-home-devices
 
-**Writen in:** C++ 
+**Writen in:** C++
 
 [Github repo](https://github.com/DankersW/smart-home-devices)
