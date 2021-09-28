@@ -19,3 +19,9 @@ Show the departure times of public transportation near me.
 
 ## Control the blinds
 Control the blinds in the bedroom
+
+## System diagnostics
+
+Have a diagnostics helper that provides the option to diagronose parts of the system. Like MQTT, Internet connectivity, all the parts of the system etc. Have some loggo's ontop of the page to show the core things, and a diagnostics page that does something simular.
+
+![Diagnostics info](static/img/diagnostics.png "Diagnoistcs page")
