@@ -10,9 +10,9 @@ they can be displayed
 Send the battery level periodiaclly to the home server and make the server send out an email if
 a device is close to running out of battery
 
-## GUI (mobile)
+## mobile GUI
 
-A simple mobile gui that visualizes; state of appliances on a interactive map of the apartment
+Make the GUI mobile friendly
 
 ## Weather station
 
@@ -21,6 +21,10 @@ message inside and outside temp, sunlight inside and outside, predict sunset and
 ## Public transportation
 
 Show the departure times of public transportation near me.
+
+## Entrance hall monitor
+
+Make a monitor in the entrence hall that shows the an nice view with the weather, shopping list, calender, buss deparatures times, some device statuses, etc.
 
 ## Control the blinds
 
