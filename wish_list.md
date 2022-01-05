@@ -31,3 +31,15 @@ Control the blinds in the bedroom
 Have a diagnostics helper that provides the option to diagronose parts of the system. Like MQTT, Internet connectivity, all the parts of the system etc. Have some loggo's ontop of the page to show the core things, and a diagnostics page that does something simular.
 
 ![Diagnostics info](static/img/diagnostics.png "Diagnoistcs page")
+
+## Kuberneters cluster
+
+Create a Kubernetes cluster using a couple of embedded computers.
+
+## Hil system for WSN
+
+Local runner at home that does some basic tests like power consumtion, and some basic communication of the WSN applications. The results need to be reported back to the CI-CD test and deploy pipeline
+
+## CI-CD pipeline
+
+CI-CD test and deploy pipeline, with some simple system tests, that deploys to the kuberneters cluster. The pipeline is triggered when a new tag is created in one of the repo's. Making this repo into a pipeline and documentation repo.
