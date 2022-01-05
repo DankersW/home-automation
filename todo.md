@@ -24,3 +24,9 @@
 ## IoT devices
 
 - [ ] alot to be done
+
+
+
+- *Map devices*: Map devices names to their physical location in the appartment.
+- get the system to run again after updates to the entire system
+- move the iot-gateway for mqtt code to "dobby"

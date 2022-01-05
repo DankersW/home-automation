@@ -29,15 +29,3 @@ Clean-up of the big PoC.
 
 device that monitors and transmits the water level in a plant pot. The device needs to run on a small batterie. BLE is chosen as the technologie. The deivce should also have a water-protective 3D printed shell. The framework analizes the results comming from the plants and deteremins if it needs water or not. The frontend will visualize in a table the health of all plants. If the water level is getting to low an email needs to be send out saying which plant needs water.
 Prefered is also to analyze the soil acidity.
-
-## Backlog
-
-- *Who is home*: Fetch a list of currently connected MAC addresses from my Asus router, compare the MAC addresses with their assosiate names. Looking at this list, can tell you who is home, maybe also, who is home untill and from when.
-
-- *Reachable from the internet*: Make the UI available from the internet.
-
-- *Threat + Zigbee*: Look into a Zigbee board and implement and Threat gateway.
-
-- *Map devices*: Map devices names to their physical location in the appartment.
-
-- *Schedular*: Scene schedular, Turn on certain lamps to a cosy color between the times of X-Y if one of the owners is home, based on the which mobile phone is in the appartment. 

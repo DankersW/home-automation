@@ -43,3 +43,15 @@ Local runner at home that does some basic tests like power consumtion, and some 
 ## CI-CD pipeline
 
 CI-CD test and deploy pipeline, with some simple system tests, that deploys to the kuberneters cluster. The pipeline is triggered when a new tag is created in one of the repo's. Making this repo into a pipeline and documentation repo.
+
+## Who is home
+
+Fetch a list of currently connected MAC addresses from my Asus router, compare the MAC addresses with their assosiate names. Looking at this list, can tell you who is home, maybe also, who is home untill and from when.
+
+## Reachable from the internet
+
+Make some parts of the UI available from the internet
+
+## Schedular
+
+Scene schedular, Turn on certain lamps to a cosy color between the times of X-Y if one of the owners is home, based on the which mobile phone is in the appartment.
