@@ -55,7 +55,7 @@ services:
       - mqtt_mosquitto_broker
 
   backend:
-    image: dankersw/home-automation-backend:v1.2.3
+    image: dankersw/home-automation-backend:2.0.1
     hostname: backend
     container_name: backend
     restart: always
