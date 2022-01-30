@@ -46,7 +46,7 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: mongo_admin_iot
 
   home-automation-framework:
-    image: dankersw/home_automation_framework:v1.0.2
+    image: dankersw/home_automation_framework:1.2.1
     hostname: framework
     container_name: framework
     restart: always
