@@ -78,6 +78,14 @@ services:
     depends_on:
       - backend  
 
+  dobby:
+    image: dankersw/dobby:0.0.1
+    hostname: dobby
+    container_name: dobby
+    restart: always
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+
 
 volumes:
   mongo-volume:
