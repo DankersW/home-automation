@@ -55,7 +55,7 @@ services:
       - mqtt_mosquitto_broker
 
   backend:
-    image: dankersw/home-automation-backend:2.0.1
+    image: dankersw/home-automation-backend:2.0.3
     hostname: backend
     container_name: backend
     restart: always
@@ -77,6 +77,14 @@ services:
       - "80:80"
     depends_on:
       - backend  
+
+  dobby:
+    image: dankersw/dobby:0.0.1
+    hostname: dobby
+    container_name: dobby
+    restart: always
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
 
 
 volumes:
