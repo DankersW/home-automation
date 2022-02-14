@@ -1,5 +1,9 @@
 version: "3.9"
 services:
+
+  # ###########
+  # INFRA
+  # ###########
   mqtt_mosquitto_broker:
     image: toke/mosquitto:release-1.4.10-2
     hostname: mqtt_mosquitto_broker
@@ -11,7 +15,8 @@ services:
       - "1883:1883"
 
   zookeeper:
-    image: confluentinc/cp-zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.0.1
+    container_name: zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
@@ -19,7 +24,8 @@ services:
       - 22181:2181
   
   kafka:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.0.1
+    container_name: kafka
     depends_on:
       - zookeeper
     ports:
@@ -53,6 +59,9 @@ services:
       - ./docker/MongoDb/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
       - ./mongo-volume:/data/db
 
+  # ###########
+  # TOOLS
+  # ###########
   mongo-express:
     image: mongo-express:0.54.0
     hostname: mongo-express
@@ -66,6 +75,18 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: mongo_admin_iot
 
+  zoo-navigator:
+    image: elkozmon/zoonavigator:1.1.1
+    container_name: zoonavigator
+    ports:
+      - "8004:8000"
+    environment:
+      HTTP_PORT: 8000
+      AUTO_CONNECT_CONNECTION_STRING: zoo1:2181
+
+  # ###########
+  # SERVICES
+  # ###########
   home-automation-framework:
     image: dankersw/home_automation_framework:1.2.1
     hostname: framework
