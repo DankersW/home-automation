@@ -99,7 +99,7 @@ services:
       - mqtt_mosquitto_broker
 
   backend:
-    image: dankersw/home-automation-backend:2.0.3
+    image: dankersw/home-automation-backend:2.0.5
     hostname: backend
     container_name: backend
     restart: always
@@ -123,7 +123,7 @@ services:
       - backend  
 
   dobby:
-    image: dankersw/dobby:0.1.0
+    image: dankersw/dobby:0.1.1
     hostname: dobby
     container_name: dobby
     restart: always
