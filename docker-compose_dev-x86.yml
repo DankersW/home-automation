@@ -123,7 +123,7 @@ services:
       - backend  
 
   dobby:
-    image: dankersw/dobby:0.1.1
+    image: dankersw/dobby:0.1.2
     hostname: dobby
     container_name: dobby
     restart: always
