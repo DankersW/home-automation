@@ -25,6 +25,7 @@ Show the departure times of public transportation near me.
 ## Entrance hall monitor
 
 Make a monitor in the entrence hall that shows the an nice view with the weather, shopping list, calender, buss deparatures times, some device statuses, etc.
+[cool gui](https://www.typeform.com/)
 
 ## Control the blinds
 
