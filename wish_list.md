@@ -64,3 +64,4 @@ Scene schedular, Turn on certain lamps to a cosy color between the times of X-Y 
 ## Landing page
 
 Make a cool landing page showing of the project, it should be on the main front-end. with a login via google.
+
