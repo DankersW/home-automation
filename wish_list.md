@@ -60,3 +60,7 @@ Make some parts of the UI available from the internet
 ## Schedular
 
 Scene schedular, Turn on certain lamps to a cosy color between the times of X-Y if one of the owners is home, based on the which mobile phone is in the appartment.
+
+## Landing page
+
+Make a cool landing page showing of the project, it should be on the main front-end. with a login via google.
