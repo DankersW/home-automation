@@ -1,10 +1,14 @@
 # Home-automation
 
-My Home-automation project consists of several different components each with their own repo and responsibility.
+My Home-automation project consists of several different components aka services with their own responsibility and divided in their own repositories.
 
 ## Run
 
 ```sh
+# x86
+docker-compose -f docker-compose_dev-x86.yml up -d
+
+# ARM used also as the production image
 docker-compose -f docker-compose_prod-arm.yml up -d
 ```
 
