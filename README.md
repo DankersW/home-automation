@@ -12,6 +12,11 @@ docker-compose -f docker-compose_dev-x86.yml up -d
 docker-compose -f docker-compose_prod-arm.yml up -d
 ```
 
+TODO:
+* List here with all the Repos, links, language and function of them
+* One big architecture picture of the system
+- a wish list 
+
 |                                      | Status             | Start date | Completion date |
 |--------------------------------------|--------------------|------------|-----------------|
 | Stage 1: Poc - Apartment temperature | Done :beers:       | 05-03-2021 | 25-03-2021      |
