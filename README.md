@@ -2,6 +2,17 @@
 
 My Home-automation project consists of several different components aka services with their own responsibility and divided in their own repositories.
 
+|                             **Service**                            |    **Language**    |                                    **Description**                                   |
+|:------------------------------------------------------------------:|:------------------:|:------------------------------------------------------------------------------------:|
+| [WSN](https://github.com/DankersW/wsn)                             | C                  | Wireless battery powered applications for embedded devices based on the Zephyr RTOS  |
+| [Dobby](https://github.com/DankersW/dobby)                         | Go                 | Gateway between the wireless notes and the rest of the system                        |
+| [Framework](https://github.com/DankersW/home-automation-framework) | Python             | Scheduling scenes and poll devices                                                   |
+| [Pakhuis](https://github.com/DankersW/pakhuis)                     | Go                 | DB driver translating Kafka streams to DB read/writes                                |
+| [Frontend](https://github.com/DankersW/home-automation-frontend)   | JavaScript (React) | Frontend to visualize system data                                                    |
+| [backend](https://github.com/DankersW/home-automation-backend)     | Go                 | RESt service                                                                         |
+| [IPC](https://github.com/DankersW/home-automation-ipc)             | Protobuf           | Holds all interprocess communication definitions                                     |
+| [SMD](https://github.com/DankersW/smart-home-devices)              | C++                | Some Arduino based applications                                                      |
+
 ## Run
 
 ```sh
