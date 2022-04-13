@@ -1,5 +1,7 @@
 # Home-automation
 
+TODO: One big architecture picture of the system
+
 My Home-automation project consists of several different components aka services with their own responsibility and divided in their own repositories.
 
 |                             **Service**                            |    **Language**    |                                    **Description**                                   |
@@ -13,7 +15,13 @@ My Home-automation project consists of several different components aka services
 | [IPC](https://github.com/DankersW/home-automation-ipc)             | Protobuf           | Holds all interprocess communication definitions                                     |
 | [SMD](https://github.com/DankersW/smart-home-devices)              | C++                | Some Arduino based applications                                                      |
 
-## Run
+&nbsp;
+
+![Architecture](static/architecture/Home-automation.png "Architectural overview")
+
+## Getting started
+
+This is very simple due to the power of Docker. The system runs on both ARM and x86, keep in mind that the ARM setup is used as a production setup on my RPI. In the future the PROD setup will be replaced by a Kubernetes setup. The DEV setup will keep using Docker-compose.
 
 ```sh
 # x86
@@ -23,51 +31,20 @@ docker-compose -f docker-compose_dev-x86.yml up -d
 docker-compose -f docker-compose_prod-arm.yml up -d
 ```
 
-TODO:
-* List here with all the Repos, links, language and function of them
-* One big architecture picture of the system
-- a wish list 
+## Wish-list
 
-|                                      | Status             | Start date | Completion date |
-|--------------------------------------|--------------------|------------|-----------------|
-| Stage 1: Poc - Apartment temperature | Done :beers:       | 05-03-2021 | 25-03-2021      |
-| Stage 2: Cleanup PoC                 | In-progress :gear: |            |                 |
-| Stage 3: Plant health monitoring     | Defined :dart:     |            |                 |
+Listing of ideas and want-to-have items that I might implement in the future
 
-&nbsp;
-
-![Architecture](static/architecture/Home-automation.png "Architectural overview")
-
-## Home-automation-framework
-
-Follows the Observer pattern and is primarily used as link between the smart-home-appliances, the cloud, and the visualization.
-
-**Writen in:** Python
-![Architecture](static/architecture/Home-automation-framework.png "Architectural overview")
-
-[Github repo](https://github.com/DankersW/home-automation-framework)
-
-## IoT-monitoring
-
-Front-end to visualize device status, host health monitoring, and iot-message tracing.
-
-Using Angular as a front-end framework.
-
-**Writen in:** Typescript
-
-## Connected-home-cloud
-
-Cloud part of the project. GCP is selected as the cloud provider. The main purpose of the cloud part is as an bridge my
-Sonos eco-system and my IoT units. GCP enables me to talk to units using voice commands via Google Assistant which is
-enabled on my Sonos network speakers.  
-
-**Writen in:** GCP, Python, Node-js
-![Architecture](static/architecture/Connected-home-cloud.png "Architectural overview")
-
-[Github repo](https://github.com/DankersW/connected-home-cloud)
-
-## Smart-home-devices
-
-**Writen in:** C++
-
-[Github repo](https://github.com/DankersW/smart-home-devices)
+* **Battery level:** monitor and report batter level of embedded devices
+* **Mobile GUI:** make the frontend mobile friendly
+* **Weather station:** measure outdoor weather conditions (sunlight, temp, humi, etc)
+* **Public transportation departure times:** hook into Västtrafikes API
+* **home-hub:** a small smart-mirror style GUI that shows an nice view with the weather, shopping list, calender, buss deparatures times, some device statuses, etc.
+[cool gui](https://www.typeform.com/)
+* **Blinds control:** control blinds of the house via a schedule
+* **System diagnostics:** Run some system diagnostics from the frontend
+* **Kubernetes:** Kubernetes cluster for all the containers
+* **CD pipeline:** CD pipeline deploying the the kubernetes cluster
+* **Who is home:** Keep track of who is home by checking the phones MAC-addresses from the router
+* **Schedular:** Transform the home-automation-framework to become a schedular instead
+* **Reachable from the internet:** Make some part reachable from the internet
