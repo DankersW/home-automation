@@ -1,7 +1,5 @@
 # Home-automation
 
-TODO: One big architecture picture of the system
-
 My Home-automation project consists of several different components aka services with their own responsibility and divided in their own repositories.
 
 |                             **Service**                            |    **Language**    |                                    **Description**                                   |
@@ -18,6 +16,8 @@ My Home-automation project consists of several different components aka services
 &nbsp;
 
 ![Architecture](static/architecture/Home-automation.png "Architectural overview")
+
+&nbsp;
 
 ## Getting started
 
