@@ -15,7 +15,7 @@ My Home-automation project consists of several different components aka services
 
 &nbsp;
 
-![Architecture](static/architecture/Home-automation.png "Architectural overview")
+![Architecture](static/architecture/home_automation.png "Architectural overview")
 
 &nbsp;
 
