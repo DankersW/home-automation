@@ -39,8 +39,7 @@ Listing of ideas and want-to-have items that I might implement in the future
 * **Mobile GUI:** make the frontend mobile friendly
 * **Weather station:** measure outdoor weather conditions (sunlight, temp, humi, etc)
 * **Public transportation departure times:** hook into Västtrafikes API
-* **home-hub:** a small smart-mirror style GUI that shows an nice view with the weather, shopping list, calender, buss deparatures times, some device statuses, etc.
-[cool gui](https://www.typeform.com/)
+* **home-hub:** a small smart-mirror style GUI that shows an nice view with the weather, shopping list, calender, buss departures times, some device statuses, etc.
 * **Blinds control:** control blinds of the house via a schedule
 * **System diagnostics:** Run some system diagnostics from the frontend
 * **Kubernetes:** Kubernetes cluster for all the containers
